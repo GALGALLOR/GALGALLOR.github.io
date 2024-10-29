@@ -1,3 +1,6 @@
+# Angel Zhou's Portfolio
 
-Copied the template from https://github.com/BrychanOdlum/brychan-io
+This is my Full-Stack Developer Portfolio created using React. 
 
+### Link
+https://angel-zhou.netlify.app/
