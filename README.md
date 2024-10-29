@@ -1,2 +1,3 @@
-# Brychan.io
-My personal website, nothing more, nothing less.
+
+Copied the template from https://github.com/BrychanOdlum/brychan-io
+
