@@ -1,6 +1,3 @@
-# Angel Zhou's Portfolio
+This is Galgallo Waqo's website and I modified parts of HTML, CSS and Javacsript from another template of website linked below: 
 
-This is my Full-Stack Developer Portfolio created using React. 
-
-### Link
-https://angel-zhou.netlify.app/
+https://github.com/gmcln-rct/gmcln-rct.github.io

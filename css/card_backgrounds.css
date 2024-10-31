@@ -1,0 +1,28 @@
+
+/* Card Backgrounds */
+
+.card__image--img1 {
+  background-image: url('../images/spotify.png');
+}
+
+.card__image--img2 {
+  background-image: url('../images/medicine.png');
+}
+
+.card__image--img3 {
+  background-image: url('../images/database.png');
+}
+
+.card__image--img4 {
+  background-image: url('../images/instagram.png');
+}
+
+.card__image--img5 {
+  background-image: url('../images/trivia.png');
+}
+
+
+
+.card__image--img6 {
+  background-image: url('../images/portfoliio-fasterthan.jpg');
+}
