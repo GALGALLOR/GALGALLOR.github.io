@@ -1,357 +1,377 @@
-<!DOCTYPE html>
+﻿<!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Galgallo Waqo - Software Engineer</title>
-    <meta
-      name="description"
-      content="Galgallo Waqo - Software Engineer Portfolio - JavaScript, CSS3, Flexbox, React, Redux, d3, Photoshop"
-    />
-    <meta
-      name="keywords"
-      content="Galgallo Waqo, portfolio, software engineer, ui, ux, frontend developer, JavaScript, React, Redux, CSS, HTML Video, Rails"
-    />
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Galgallo Waqo - Software Engineer and AI/ML Developer portfolio.">
+  <title>Galgallo Waqo | Software Engineer and AI/ML Developer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&family=Sora:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+  <div class="progress" id="progress"></div>
 
-    <!-- FACEBOOK CARD -->
-    <meta propoerty="og:title" content="Galgallo Waqo - Software Engineer" />
-    <meta property="”og:url”" content="https://www.galgallowaqo.com/" />
-    <meta
-      property="”og:description”"
-      content="Portfolio site with resume, skills, experience and contact info for Galgallo Waqo. Frontend Developer & Software Engineer."
-    />
-    <meta
-      property="”og:image”"
-    />
-    <meta property="”og:type”" content="website" />
+  <header class="site-header" id="top">
+    <nav class="nav shell">
+      <a class="brand" href="#top">GW</a>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false">Menu</button>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#about">About</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#publications">Accomplishments</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <a class="resume-btn" href="assets/media/Galgallo-Waqo-AI-SWE-Resume-2026.pdf" target="_blank" rel="noopener">Resume</a>
+    </nav>
+  </header>
 
-    <link rel="stylesheet" href="css/reset.css" />
-
-    <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
-          
-    <link rel="stylesheet" href="css/nav.css" />
-    <link rel="stylesheet" href="css/home.css" />
-    <link rel="stylesheet" href="css/portfolio.css" />
-    <link rel="stylesheet" href="css/card_backgrounds.css" />
-    <link rel="stylesheet" href="css/skills.css" />
-    <link rel="stylesheet" href="css/contact.css" />
-    <link rel="stylesheet" href="css/styles.css" />
-    <link rel="stylesheet" href="css/font-awesome.css" />
-    <link rel="stylesheet" href="css/brands.css" />
-
-    <link
-      rel="stylesheet"
-      href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css"
-    />
-
-    <link rel="stylesheet" href="css/font-awesome.css" />
-
-    <!-- Favicons -->
-    <link
-      rel="apple-touch-icon"
-      sizes="180x180"
-      href="/images/favicon/apple-touch-icon.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="32x32"
-      href="/images/favicon/favicon-32x32.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="16x16"
-      href="/images/favicon/favicon-16x16.png"
-    />
-    <link rel="manifest" href="/images/favicon/site.webmanifest" />
-  </head>
-
-  <body id="body">
-    <header>
-      <nav class="buttonWrapper" role="tablist">
-        <button
-          class="tab-button active"
-          data-id="home"
-          id="home-tab"
-          role="tab"
-          aria-controls="home"
-        >
-          Home
-        </button>
-        <button
-          class="tab-button"
-          data-id="portfolio"
-          id="portfolio-tab"
-          role="tab"
-          aria-controls="portfolio"
-        >
-          Portfolio
-        </button>
-        <button
-          class="tab-button"
-          data-id="skills"
-          id="skills-tab"
-          role="tab"
-          aria-controls="skills"
-        >
-          Skills
-        </button>
-        <button
-          class="tab-button"
-          data-id="contact"
-          id="contact-tab"
-          role="tab"
-          aria-controls="contact"
-        >
-          Contact
-        </button>
-      </nav>
-    </header>
-    <main class="wrapper">
-      <div class="contentWrapper">
-        <section class="content active" id="home" role="tabpanel">
-          <h1>Galgallo Waqo</h1>
-          <h2 >Software Engineer(FullStack)</h2>
-          <div class="header-text">
-            <p>Hi, I'm Galgallo. Nice to meet you!</p>
-            <br />
-            <p>
-              I am a Kenyan Illinois-based Full Stack Web Developer whose skills include
-              <strong>Javascript</strong>, <strong>HTML/CSS</strong>,
-              <strong>Python</strong>, <strong>React</strong>, <strong>C#</strong>,
-              <strong>CSS, MySQL</strong> and <strong>Java Springboot</strong>.
-            </p>
-            <!-- <p>Currently, I work as a Frontend Developer at <a href="https://xcentium.com/"
-                            target="_blank">XCentium.</a></p> -->
-            <br />
-            <div>
-              I’m passionate about creating seamless digital experiences, from clean frontends to efficient APIs and backend systems.</div>
+  <main>
+    <section class="hero shell">
+      <div class="hero-copy reveal">
+        <p class="eyebrow">Software Engineer | AI/ML Developer</p>
+        <h1>Galgallo Waqo</h1>
+        <p class="lead">I build full-stack systems and AI pipelines for security intelligence, automation, and data-driven decision support.</p>
+        <div class="hero-meta">
+          <span>Galesburg, Illinois</span>
+          <span>Knox College - CS and Data Science</span>
+          <span>GPA: 3.8 / 4.0</span>
+        </div>
+        <article class="breaking-news card">
+          <p class="news-kicker">Breaking News</p>
+          <h3>HackIllinois 2026: 1st Place - Best Use of Actian VectorAI DB</h3>
+          <p>Santosh Pant and I won as a two-person team in our first hackathon, competing among ~700 hackers.</p>
+          <p>We built Vigilant AI to transform long CCTV footage into searchable intelligence using computer vision, vector search, Gemini summaries, and scalable inference on Modal.</p>
+          <ul>
+            <li>Detects and tracks activity in CCTV footage</li>
+            <li>Builds semantic embeddings and stores them in Actian VectorAI DB</li>
+            <li>Uses Gemini for summaries and chatbot-style Q&amp;A</li>
+            <li>Runs scalable inference on Modal</li>
+          </ul>
+          <p class="news-links">
+            <a href="https://lnkd.in/dHVdJhxG" target="_blank" rel="noopener">Devpost</a>
+            <a href="https://github.com/GALGALLOR/vigilant-ai" target="_blank" rel="noopener">Repo</a>
+          </p>
+          <div class="news-media-grid">
+            <img class="media-thumb" data-media-type="image" data-media-src="assets/images/vigilant-ai-ui.png" src="assets/images/vigilant-ai-ui.png" alt="Vigilant AI interface screenshot">
+            <img class="media-thumb" data-media-type="image" data-media-src="assets/images/vigilant-ai-projector.png" src="assets/images/vigilant-ai-projector.png" alt="Vigilant AI shown on projector">
+            <img class="media-thumb" data-media-type="image" data-media-src="assets/images/hack-prize-ceremony.jpeg" src="assets/images/hack-prize-ceremony.jpeg" alt="Receiving HackIllinois prize">
+            <img class="media-thumb" data-media-type="image" data-media-src="assets/images/hack-win-prize.jpeg" src="assets/images/hack-win-prize.jpeg" alt="HackIllinois prize photo">
+            <img class="media-thumb" data-media-type="image" data-media-src="assets/images/hack-crowd-backview.jpeg" src="assets/images/hack-crowd-backview.jpeg" alt="HackIllinois crowd back view">
+            <video class="media-thumb" data-media-type="video" data-media-src="assets/images/hack-crowd-video.mp4" controls preload="metadata">
+              <source src="assets/images/hack-crowd-video.mp4" type="video/mp4">
+            </video>
+            <div class="media-placeholder">More photos coming</div>
+            <div class="media-placeholder">More photos coming</div>
           </div>
-        </section>
-        <section class="content" id="portfolio" role="tabpanel">
-          <div id="skills-title">Galgallo Waqo - Portfolio</div>
-          <ul id="portfolio-list">
-            <li class="cards__item">
-              <a href="https://github.com/GALGALLOR/spotify/tree/main/Spotify" target="_blank">
-                <div class="card">
-                  <div class="card__image card__image--img1"></div>
-                  <div class="card__content">
-                    <div class="card__title">Spotify API System</div>
-                    <p class="card__text">
-                      This system is a designed spotify communication
-                       protocol that enables any website/web app to integrate
-                        with spotify efficiently.
-                    </p>
-                  </div>
-                </div>
-              </a>
-            </li>
-            <li class="cards__item">
-              <a href="https://github.com/GALGALLOR/Pharmacy-system" target="_blank">
-                <div class="card">
-                  <div class="card__image card__image--img2"></div>
-                  <div class="card__content">
-                    <div class="card__title">Pharmacy System</div>
-                    <p class="card__text">
-                      This is a website designed to monitor and control a 
-                      small scale pharmacy. This could range from stock Management,
-                      sales monitor, Profit-Loss control, Employee monitor amongst others. This is 
-                      also contains point of view for Managers and Directors over stores.
-                    </p>
-                  </div>
-                </div>
-              </a>
-            </li>
-            <li class="cards__item">
-              <a href="https://github.com/GALGALLOR/Mama-G-farm" target="_blank">
-                <div class="card">
-                  <div class="card__image card__image--img3"></div>
-                  <div class="card__content">
-                    <div class="card__title">Farm Management System</div>
-                    <p class="card__text">
-                      A System designed to manage all the data involved in a Farm business ranging from
-                      Farm Produce monitor, employee duty monitors, Stock control, Profit-loss control, Sales monitor, 
-                      On-Duty monitor among Many others. This is a good complete system for mixed farming.
-                    </p>
-                  </div>
-                </div>
-              </a>
-            </li>
+        </article>
+        <div class="hero-cta">
+          <a class="btn btn-primary" href="#projects">See Projects</a>
+          <a class="btn btn-ghost" href="#contact">Contact Me</a>
+          <a class="btn btn-ghost" href="assets/media/Galgallo-Waqo-AI-SWE-Resume-2026.pdf" target="_blank" rel="noopener">Download Resume</a>
+        </div>
+      </div>
+      <div class="hero-visual reveal">
+        <div class="profile-wrap">
+          <img src="assets/images/profile-me.png" alt="Galgallo Waqo profile photo" onerror="this.style.display='none'">
+        </div>
+      </div>
+    </section>
 
-            <li class="cards__item">
-              <a href="https://github.com/GALGALLOR/memesCloner" target="_blank">
-                <div class="card">
-                  <div class="card__image card__image--img4"></div>
-                  <div class="card__content">
-                    <div class="card__title">InstaBot</div>
-                    <p class="card__text">
-                      This is my personal instagram bot that uses API Management to download memes from a public website and post them into an instagram meme account
-                      at specific time of every day.
-                    </p>
-                  </div>
-                </div>
-              </a>
-            </li>
-            <li class="cards__item">
-              <a href="https://github.com/GALGALLOR/Trivia" target="_blank">
-                <div class="card">
-                  <div class="card__image card__image--img5"  ></div>
-                  <div class="card__content">
-                    <div class="card__title">High School Trivia Game</div>
-                    <p class="card__text">
-                     This is a Trivia Game I made for my school which collected data from my school mates and 
-                     which I used to fetch data for entertainment and school placement system. Everyone wanted to know
-                     their rank in terms of school socccer so I made a trivia page for every student to vote for their
-                     best team, second best team and last team.
-                    </p>
-                  </div>
-                </div>
-              </a>
-            </li>
-            <li class="cards__item">
-              <a href="https://galgallor.itch.io/jetpack-jhonny" target="_blank">
-                <div class="card">
-                  <div class="card__image card__image--img6" style="  background-image: url('../images/GALGALLO PAGE.png')";
-" ></div>
-                  <div class="card__content">
-                    <div class="card__title">Jetpack Jhonny Game</div>
-                    <p class="card__text">
-                      A retro-style 2D platformer I built using Godot.
-Interact with fun game sound features, fly with a jetpack, and explore fun levels.
-                    </p>
-                  </div>
-                </div>
-              </a>
-            </li>
-         
-          </ul>
-        </section>
-        <section class="content" id="skills" role="tabpanel">
-          <div id="skills-title" >Galgallo Waqo - Skills</div>
-          <ul class="skills-languages">
-            <li>
-              <i class="icons devicon-python-plain colored"></i>
-              <p>Python</p>
-            </li>
-          
-            <li>
-              <i class="icons devicon-java-plain colored"></i>  <!-- Corrected casing -->
-              <p>Java</p>
-            </li>
-          
-            <li>
-              <i class="icons devicon-css3-plain colored"></i>
-              <p>CSS3</p>
-            </li>
-          
-            <li>
-              <i class="icons devicon-maven-plain colored"></i>
-              <p>Maven</p>
-            </li>
-          
-            <li>
-              <i class="icons devicon-windows11-original colored"></i>
-              <p>Windows</p>  <!-- Capitalized -->
-            </li>
-          
-            <li>
-              <i class="icons devicon-javascript-plain colored"></i>
-              <p>JavaScript</p>  <!-- Capitalized and corrected spelling -->
-            </li>
-          
-            <!-- Uncomment if needed
-            <li>
-              <i class="icons devicon-ruby-plain colored"></i>
-              <p>Ruby</p>
-            </li>
-            <li>
-              <i class="icons devicon-rails-plain colored"></i>
-              <p>Rails</p>
-            </li>
-            -->
-          
-            <li>
-              <i class="icons devicon-html5-plain colored"></i>  <!-- Changed to html5 for better recognition -->
-              <p>HTML</p>  <!-- Capitalized -->
-            </li>
-          
-            <li>
-              <i class="icons devicon-git-plain colored"></i>
-              <p>Git</p>
-            </li>
-          
-            <li>
-              
-            <i class="icons devicon-haskell-plain colored"></i>
-              <p>Haskell</p>  <!-- Capitalized and formatted -->
-            </li>
-          
-            <li>
-              <i class="icons devicon-mysql-plain colored"></i>  <!-- Added colored class -->
-              <p>MySQL</p>  <!-- Capitalized -->
-            </li>
-          
-            <li>
-              
+    <section id="about" class="section shell reveal">
+      <h2>About</h2>
+      <p>Software Engineer and AI/ML developer with experience building intelligent systems across backend services, computer vision workflows, and production-style applications. I work across Python, Java Spring Boot, React, and cloud GPU infrastructure to create tools that are practical and scalable.</p>
+      <p>I am especially interested in AI for real-world security, analytics, and workflow automation, including multimodal search and operational monitoring systems.</p>
+    </section>
 
+    <section id="education" class="section shell reveal">
+      <h2>Education</h2>
+      <div class="timeline">
+        <article class="card">
+          <h3>Knox College, Galesburg, IL</h3>
+          <p class="muted">Bachelor of Science, Computer Science and Data Science | Expected June 2027</p>
+          <p class="muted">GPA: 3.8 / 4.0</p>
+          <p>Coursework: Software Engineering, Molecular Programming, New Supercomputer Net Topologies, Artificial Intelligence and Machine Learning.</p>
+        </article>
+      </div>
+    </section>
 
-              <i class="devicon-azuredevops-plain colored"></i>
-              <p>Azure</p>
-            </li>
-            
-          </ul>
-          
-        </section>
-        <section class="content" id="contact" role="tabpanel">
-          <div class="contact__wrapper">
-            <div class="contact__title">Galgallo Waqo - Contact</div>
-            <div class="contact__subtitle">
-              Thanks for visiting. <br />Let's connect!
-            </div>
-            <!-- <br> -->
-            <!-- <a href="mailto:contact@glennmcclanan.com">Send Email</a>
-                    <p>Or on social:</p> -->
-
-            <ul class="contact__icons">
-              <li>
-                <a
-                  href="https://www.linkedin.com/in/galgallo-waqo/"
-                  target="_blank"
-                  ><i class="fab fa-linkedin"></i><br />LinkedIn</a
-                >
-              </li>
-              <li>
-                <a href="https://github.com/GALGALLOR" target="_blank"
-                  ><i class="fab fa-github-square"></i><br />Github</a
-                >
-              </li>
-              <li>
-                <a href="https://www.instagram.com/its.galo_2/" target="_blank"
-                  ><i class="fab fa-instagram"></i><br />Instagram</a
-                >
-              </li>
+    <section id="experience" class="section shell reveal">
+      <h2>Experience</h2>
+      <p class="section-note">Click a role to expand details.</p>
+      <div class="accordion" id="experienceAccordion">
+        <article class="acc-item card open">
+          <button class="acc-head" aria-expanded="true">
+            <span>
+              <strong>Software Engineering Intern</strong> - KCB Bank
+              <small>Nairobi, Kenya | Jun 2024 - Sep 2024</small>
+            </span>
+            <span class="acc-icon">+</span>
+          </button>
+          <div class="acc-body">
+            <ul>
+              <li>Built Java Spring Boot microservices for mobile and online banking flows serving 1,000,000+ users.</li>
+              <li>Integrated APIs with Credit Reference Bureau systems, reducing eligibility checks from 2 days to under 2 minutes.</li>
+              <li>Learned core banking workflow design and fintech service delivery.</li>
             </ul>
           </div>
-        </section>
+        </article>
+
+        <article class="acc-item card">
+          <button class="acc-head" aria-expanded="false">
+            <span>
+              <strong>Web Developer Intern</strong> - Jupiter Machine Tool Inc
+              <small>Galesburg, IL | Apr 2025 - Present</small>
+            </span>
+            <span class="acc-icon">+</span>
+          </button>
+          <div class="acc-body">
+            <ul>
+              <li>Maintain, optimize, and secure websites to keep performance stable.</li>
+              <li>Manage plugin updates and backup systems for reliable operations.</li>
+              <li>Update blog content for clarity and consistency.</li>
+              <li>Support SEO and competitor analysis to improve visibility.</li>
+            </ul>
+          </div>
+        </article>
+
+                <article class="acc-item card">
+          <button class="acc-head" aria-expanded="false">
+            <span>
+              <strong>Social Media Manager</strong> - Knox College
+              <small>Galesburg, IL | Sep 2024 - Present</small>
+            </span>
+            <span class="acc-icon">+</span>
+          </button>
+          <div class="acc-body">
+            <ul>
+              <li>Managed growth across Instagram, Facebook, X, and LinkedIn.</li>
+              <li>Reached 94,000+ accounts and generated 3.4M+ impressions.</li>
+              <li>Produced 1,200+ posts and 200,000+ video views.</li>
+              <li>Used Canva and CapCut for campaign media design and production.</li>
+            </ul>
+          </div>
+        </article>
+
+
       </div>
-    </main>
+    </section>
 
-    <footer id="WebGL-output"></footer>
+    <section id="projects" class="section shell reveal">
+      <h2>Research and Projects</h2>
+      <div class="chips" id="projectFilters">
+        <button class="chip active" data-filter="all">All</button>
+        <button class="chip" data-filter="ai">AI/ML</button>
+        <button class="chip" data-filter="web">Web</button>
+        <button class="chip" data-filter="game">Game</button>
+        <button class="chip" data-filter="research">Research</button>
+      </div>
 
-    <!-- Three.js Scripts -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/103/three.min.js"></script>
+      <div class="grid projects-grid" id="projectGrid">
+        <article class="project card" data-media-type="image" data-media-src="assets/images/vigilant-ai-ui.png">
+          <h3>Vigilant AI</h3>
+          <p class="muted">AI-Powered Video Surveillance Intelligence | Mar 2026</p>
+          <p>Built an AI-powered system that converts raw surveillance video into structured, searchable intelligence using modern computer vision and multimodal AI models.</p>
+          <ul>
+            <li>Object detection and activity analysis using YOLO11-L</li>
+            <li>Semantic video search using CLIP embeddings + vector database</li>
+            <li>Vision-language captioning with Qwen2.5-VL and Gemini</li>
+            <li>Hybrid retrieval using vector similarity + keyword search</li>
+            <li>Streaming chat interface for natural language video queries</li>
+            <li>Cross-video memory for long-term behavioral intelligence</li>
+          </ul>
+          <p class="stack">Actian VectorAI DB | Computer Vision | Multimodal Prompting | Machine Learning | PyTorch | Object Detection</p>
+          <div class="project-media-row">
+            <img class="media-thumb" data-media-type="image" data-media-src="assets/images/vigilant-ai-ui.png" src="assets/images/vigilant-ai-ui.png" alt="Vigilant AI UI">
+            <img class="media-thumb" data-media-type="image" data-media-src="assets/images/vigilant-ai-projector.png" src="assets/images/vigilant-ai-projector.png" alt="Vigilant AI presentation">
+            <img class="media-thumb" data-media-type="image" data-media-src="assets/images/hack-prize-ceremony.jpeg" src="assets/images/hack-prize-ceremony.jpeg" alt="Award ceremony">
+            <img class="media-thumb" data-media-type="image" data-media-src="assets/images/hack-win-prize.jpeg" src="assets/images/hack-win-prize.jpeg" alt="Award photo">
+            <div class="media-placeholder">Incoming photo</div>
+            <div class="media-placeholder">Incoming photo</div>
+          </div>
+          <div class="project-links">
+            <a href="https://github.com/GALGALLOR/vigilant-ai" target="_blank" rel="noopener">GitHub</a>
+            <a href="https://lnkd.in/dHVdJhxG" target="_blank" rel="noopener">Devpost</a>
+            <a href="https://www.youtube.com/watch?v=5qwpq6IBltU" target="_blank" rel="noopener">Demo Video</a>
+            <button class="ghost project-preview">Preview</button>
+          </div>
+        </article>
 
-    <script src="https://unpkg.com/three@0.104.0/examples/js/controls/OrbitControls.js"></script>
+        <article class="project card" data-tags="web ai" data-media-type="image" data-media-src="assets/images/vigilant-ai-projector.png">
+          <h3>Macro Image Data Management Platform</h3>
+          <p class="muted">Full-Stack and DevOps Team Project | Mar 2025 - Jun 2025</p>
+          <p>Team-built platform for scientific image data management across private network directories, with secure access, metadata syncing, deep filtering, and containerized deployment.</p>
+          <p>I led backend and infrastructure efforts: secured Flask API with role-based auth, refactored into MVC, designed JSON metadata sync workflows, handled Docker Compose multi-container issues, and wrote deployment/testing documentation.</p>
+          <p class="stack">Software Engineering Practices | Back-End Development | Docker | MongoDB | Technical Documentation | REST APIs</p>
+          <div class="project-links">
+            <a href="https://github.com/GALGALLOR/Macro-Database-System" target="_blank" rel="noopener">GitHub</a>
+            <button class="ghost project-preview">Preview</button>
+          </div>
+        </article>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/simplex-noise/2.4.0/simplex-noise.min.js"></script>
+        <article class="project card" data-tags="game" data-media-type="image" data-media-src="assets/images/jetpack-johnny-logo.png">
+          <h3>Jetpack Johnny Game</h3>
+          <p class="muted">Jan 2025 - Mar 2025</p>
+          <p>Co-developed a 2D side-scrolling action-shooter in Godot with teammates Nairran Zargar, Eita Ueda, and Santosh Panti.</p>
+          <ul>
+            <li>Implemented player mechanics and core backend game systems</li>
+            <li>Designed enemy movement, boss behaviors, and randomized spawns</li>
+            <li>Balanced challenge and humor with custom sound design</li>
+          </ul>
+          <p class="stack">GDScript | Godot | Team Leadership | Project Management</p>
+          <div class="project-media-row">
+            <img class="media-thumb" data-media-type="image" data-media-src="assets/images/jetpack-johnny-logo.png" src="assets/images/jetpack-johnny-logo.png" alt="Jetpack Johnny logo">
+            <div class="media-placeholder">Incoming photo</div>
+            <div class="media-placeholder">Incoming photo</div>
+          </div>
+          <div class="project-links">
+            <a href="https://galgallor.itch.io/jetpack-jhonny" target="_blank" rel="noopener">Play Game</a>
+            <a href="https://github.com/GALGALLOR/Jetpack-Jhonny-Game" target="_blank" rel="noopener">Github</a>
+            <a href="https://drive.google.com/file/d/1VbLfG_yGkpuIM0xElYRSohOSzBcYXUj0/view" target="_blank" rel="noopener">Demo Video</a>
+            <button class="ghost project-preview">Preview</button>
+          </div>
+        </article>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.transit/0.9.12/jquery.transit.min.js"></script>
+        <article class="project card" data-tags="research" data-media-type="pdf" data-media-src="assets/media/supercomputer-network-topologies-research.pdf">
+          <h3>Comparative Analysis of Supercomputer Network Topologies</h3>
+          <p class="muted">Sep 2024 - Dec 2024</p>
+          <p>Conducted network theory research with Erdos-Renyi models to study how random shortcuts and connectivity influence network diameter and traversal efficiency.</p>
+          <p>Implemented custom optimization strategies linking high-degree and low-degree vertices and found Erdos-Renyi ring structures offer strong scalability for distributed systems.</p>
+          <p class="stack">Network Theory | Algorithm Design | Debugging | Distributed Systems</p>
+          <div class="project-media-row">
+            <button class="media-doc" data-media-type="pdf" data-media-src="assets/media/supercomputer-network-topologies-research.pdf">Open Research PDF</button>
+            <div class="media-placeholder">Incoming photo</div>
+            <div class="media-placeholder">Incoming photo</div>
+          </div>
+          <div class="project-links">
+            <a href="assets/media/supercomputer-network-topologies-research.pdf" target="_blank" rel="noopener">Research Poster (PDF)</a>
+            <button class="ghost project-preview">Open PDF</button>
+          </div>
+        </article>
+      </div>
+    </section>
 
-    <!-- Custom Scripts -->
-    <script src="./scripts/main.js"></script>
-    <script src="./scripts/tabs.js"></script>
-    <script src="./scripts/cursor.js"></script>
-  </body>
+    <section id="skills" class="section shell reveal">
+      <h2>Skills</h2>
+      <p class="section-note">Technical stack across AI, software engineering, and deployment.</p>
+      <div class="skills-grid">
+        <article class="card">
+          <h3>Languages</h3>
+          <p>Python, Java, JavaScript, TypeScript, C++, C#, C, Kotlin, GDScript, Spring Boot, Actian VectorAI</p>
+        </article>
+        <article class="card">
+          <h3>Frameworks and Development</h3>
+          <p>Flask, FastAPI, React, Spring Boot, REST APIs, Microservices, Role-Based Access Control, OAuth</p>
+        </article>
+        <article class="card">
+          <h3>AI, ML, and Data</h3>
+          <p>Computer Vision, Multimodal AI, Vector Search, Object Detection, Semantic Retrieval, ML Pipelines, PyTorch</p>
+        </article>
+        <article class="card">
+          <h3>Infrastructure and Tools</h3>
+          <p>Docker, Docker Compose, MongoDB, Modal (serverless GPUs), Git/GitHub, Technical Documentation, SEO Workflows</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="publications" class="section shell reveal">
+      <h2>Accomplishments and Certifications</h2>
+      <div class="pub-grid">
+        <article class="card">
+          <h3>Key Accomplishments</h3>
+          <ul>
+            <li>HackIllinois 2026 - 1st Place, Best Use of Actian VectorAI DB (Vigilant AI).</li>
+            <li>NCAA Division III National Semifinalist - Knox College Men's Soccer Team (2024).</li>
+            <li>Historian/Public Relations - African Student Associations.</li>
+            <li>Dean's List Recognition - Knox College.</li>
+            <li>Certificate of Good Conduct - Light Academy (2021).</li>
+          </ul>
+          <p class="merit-link">
+            Full accomplishments list: <a href="https://meritpages.com/Galgallo" target="_blank" rel="noopener">Merit Page</a>
+          </p>
+        </article>
+
+        <article class="card">
+          <h3>Certifications and Professional Development</h3>
+          <ul>
+            <li>Student Success Mentor Training - Mentor Collective (June 2023)</li>
+            <li>CPR, AED and First Aid Certification - NHCPS (2023)</li>
+          </ul>
+        </article>
+
+        <article class="card">
+          <h3>Honors and Awards</h3>
+          <p class="muted">Galgallo in the News</p>
+          <ul>
+            <li><strong>Honors Award:</strong> Knox Athletes Earn 101 Academic All-Conference Honors - July 21, 2025 (Verified by Knox College).</li>
+          </ul>
+          <details class="deans-list" open>
+            <summary>Dean's List Awards</summary>
+            <ul>
+              <li>Fall 2025 Dean's List - January 24, 2026 (Verified by Knox College).</li>
+              <li>Spring 2025 Dean's List - July 21, 2025 (Verified by Knox College).</li>
+              <li>Winter 2025 Dean's List - April 28, 2025 (Verified by Knox College).</li>
+              <li>Fall 2024 Dean's List - January 06, 2025 (Verified by Knox College).</li>
+              <li>Spring 2024 Dean's List - July 29, 2024 (Verified by Knox College).</li>
+              <li>Fall 2023 Dean's List - January 24, 2024 (Verified by Knox College).</li>
+            </ul>
+          </details>
+          <ul>
+            <li>All entries are listed on your Merit profile and verified by Knox College where marked.</li>
+          </ul>
+          <p class="merit-link">
+            More accomplishments: <a href="https://meritpages.com/Galgallo" target="_blank" rel="noopener">Merit Page</a>
+          </p>
+          <div class="badge-gallery">
+            <a href="https://meritpages.com/Galgallo" target="_blank" rel="noopener">
+              <img src="assets/images/awards-honors-badge.png" alt="Awards and Honors badge">
+            </a>
+            <a href="https://meritpages.com/Galgallo" target="_blank" rel="noopener">
+              <img src="assets/images/deans-list-badge.png" alt="Dean's List badge">
+            </a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section id="contact" class="section shell reveal">
+      <h2>Contact</h2>
+      <div class="contact-wrap">
+        <a class="card" href="mailto:grwaqo@knox.edu">
+          <h3>Email</h3>
+          <p>grwaqo@knox.edu</p>
+        </a>
+        <a class="card" href="tel:+13097036174">
+          <h3>Phone</h3>
+          <p>(309) 703-6174</p>
+        </a>
+        <a class="card" href="https://www.linkedin.com/in/galgallo-waqo/" target="_blank" rel="noreferrer noopener">
+          <h3>LinkedIn</h3>
+          <p>linkedin.com/in/galgallo-waqo</p>
+        </a>
+        <a class="card" href="https://github.com/GALGALLOR" target="_blank" rel="noreferrer noopener">
+          <h3>GitHub</h3>
+          <p>github.com/GALGALLOR</p>
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer shell">
+    <p>Copyright <span id="year"></span> Galgallo Waqo. Built with HTML, CSS, and JavaScript.</p>
+  </footer>
+
+  <button class="back-top" id="backTop" aria-label="Back to top">Top</button>
+
+  <dialog class="media-modal" id="mediaModal">
+    <button class="close-modal" id="closeModal" aria-label="Close">x</button>
+    <div id="mediaFrame"></div>
+  </dialog>
+
+  <script src="assets/js/main.js"></script>
+</body>
 </html>
