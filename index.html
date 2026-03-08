@@ -60,14 +60,15 @@
             <img class="media-thumb" data-media-type="image" data-media-src="assets/images/vigilant-ai-ui.png" src="assets/images/vigilant-ai-ui.png" alt="Vigilant AI interface screenshot">
             <img class="media-thumb" data-media-type="image" data-media-src="assets/images/vigilant-ai-projector.png" src="assets/images/vigilant-ai-projector.png" alt="Vigilant AI shown on projector">
             <img class="media-thumb" data-media-type="image" data-media-src="assets/images/hack-prize-ceremony.jpeg" src="assets/images/hack-prize-ceremony.jpeg" alt="Receiving HackIllinois prize">
-            <img class="media-thumb" data-media-type="image" data-media-src="assets/images/hack-win-prize.jpeg" src="assets/images/hack-win-prize.jpeg" alt="HackIllinois prize photo">
-            <img class="media-thumb" data-media-type="image" data-media-src="assets/images/hack-crowd-backview.jpeg" src="assets/images/hack-crowd-backview.jpeg" alt="HackIllinois crowd back view">
-            <video class="media-thumb" data-media-type="video" data-media-src="assets/images/hack-crowd-video.mp4" controls preload="metadata">
+            <img class="media-thumb gallery-extra" data-media-type="image" data-media-src="assets/images/hack-win-prize.jpeg" src="assets/images/hack-win-prize.jpeg" alt="HackIllinois prize photo">
+            <img class="media-thumb gallery-extra" data-media-type="image" data-media-src="assets/images/hack-crowd-backview.jpeg" src="assets/images/hack-crowd-backview.jpeg" alt="HackIllinois crowd back view">
+            <video class="media-thumb gallery-extra" data-media-type="video" data-media-src="assets/images/hack-crowd-video.mp4" controls preload="metadata">
               <source src="assets/images/hack-crowd-video.mp4" type="video/mp4">
             </video>
-            <div class="media-placeholder">More photos coming</div>
-            <div class="media-placeholder">More photos coming</div>
+            <div class="media-placeholder gallery-extra">Incoming photo</div>
+            <div class="media-placeholder gallery-extra">Incoming photo</div>
           </div>
+          <button class="gallery-toggle" type="button" data-target=".news-media-grid">Show more media</button>
         </article>
         <div class="hero-cta">
           <a class="btn btn-primary" href="#projects">See Projects</a>
@@ -83,13 +84,13 @@
     </section>
 
     <section id="about" class="section shell reveal">
-      <h2>About</h2>
+      <h2><span class="h-icon icon-about" aria-hidden="true"></span>About</h2>
       <p>Software Engineer and AI/ML developer with experience building intelligent systems across backend services, computer vision workflows, and production-style applications. I work across Python, Java Spring Boot, React, and cloud GPU infrastructure to create tools that are practical and scalable.</p>
       <p>I am especially interested in AI for real-world security, analytics, and workflow automation, including multimodal search and operational monitoring systems.</p>
     </section>
 
     <section id="education" class="section shell reveal">
-      <h2>Education</h2>
+      <h2><span class="h-icon icon-education" aria-hidden="true"></span>Education</h2>
       <div class="timeline">
         <article class="card">
           <h3>Knox College, Galesburg, IL</h3>
@@ -101,7 +102,7 @@
     </section>
 
     <section id="experience" class="section shell reveal">
-      <h2>Experience</h2>
+      <h2><span class="h-icon icon-experience" aria-hidden="true"></span>Experience</h2>
       <p class="section-note">Click a role to expand details.</p>
       <div class="accordion" id="experienceAccordion">
         <article class="acc-item card open">
@@ -116,6 +117,8 @@
             <ul>
               <li>Built Java Spring Boot microservices for mobile and online banking flows serving 1,000,000+ users.</li>
               <li>Integrated APIs with Credit Reference Bureau systems, reducing eligibility checks from 2 days to under 2 minutes.</li>
+              <li>Implemented and documented service endpoints used for payment and eligibility workflows.</li>
+              <li>Supported deployment-readiness checks and API validation with engineering teams.</li>
               <li>Learned core banking workflow design and fintech service delivery.</li>
             </ul>
           </div>
@@ -135,6 +138,7 @@
               <li>Manage plugin updates and backup systems for reliable operations.</li>
               <li>Update blog content for clarity and consistency.</li>
               <li>Support SEO and competitor analysis to improve visibility.</li>
+              <li>Troubleshoot site issues and monitor reliability to reduce service disruption.</li>
             </ul>
           </div>
         </article>
@@ -153,6 +157,7 @@
               <li>Reached 94,000+ accounts and generated 3.4M+ impressions.</li>
               <li>Produced 1,200+ posts and 200,000+ video views.</li>
               <li>Used Canva and CapCut for campaign media design and production.</li>
+              <li>Designed recurring content workflows for consistent engagement performance.</li>
             </ul>
           </div>
         </article>
@@ -162,7 +167,7 @@
     </section>
 
     <section id="projects" class="section shell reveal">
-      <h2>Research and Projects</h2>
+      <h2><span class="h-icon icon-projects" aria-hidden="true"></span>Research and Projects</h2>
       <div class="chips" id="projectFilters">
         <button class="chip active" data-filter="all">All</button>
         <button class="chip" data-filter="ai">AI/ML</button>
@@ -172,7 +177,7 @@
       </div>
 
       <div class="grid projects-grid" id="projectGrid">
-        <article class="project card" data-media-type="image" data-media-src="assets/images/vigilant-ai-ui.png">
+        <article class="project card" data-tags="ai web research" data-media-type="image" data-media-src="assets/images/vigilant-ai-ui.png">
           <h3>Vigilant AI</h3>
           <p class="muted">AI-Powered Video Surveillance Intelligence | Mar 2026</p>
           <p>Built an AI-powered system that converts raw surveillance video into structured, searchable intelligence using modern computer vision and multimodal AI models.</p>
@@ -225,8 +230,8 @@
           <p class="stack">GDScript | Godot | Team Leadership | Project Management</p>
           <div class="project-media-row">
             <img class="media-thumb" data-media-type="image" data-media-src="assets/images/jetpack-johnny-logo.png" src="assets/images/jetpack-johnny-logo.png" alt="Jetpack Johnny logo">
-            <div class="media-placeholder">Incoming photo</div>
-            <div class="media-placeholder">Incoming photo</div>
+            <!--<div class="media-placeholder">Incoming photo</div>
+            <div class="media-placeholder">Incoming photo</div> -->
           </div>
           <div class="project-links">
             <a href="https://galgallor.itch.io/jetpack-jhonny" target="_blank" rel="noopener">Play Game</a>
@@ -256,7 +261,7 @@
     </section>
 
     <section id="skills" class="section shell reveal">
-      <h2>Skills</h2>
+      <h2><span class="h-icon icon-skills" aria-hidden="true"></span>Skills</h2>
       <p class="section-note">Technical stack across AI, software engineering, and deployment.</p>
       <div class="skills-grid">
         <article class="card">
@@ -279,7 +284,7 @@
     </section>
 
     <section id="publications" class="section shell reveal">
-      <h2>Accomplishments and Certifications</h2>
+      <h2><span class="h-icon icon-awards" aria-hidden="true"></span>Accomplishments and Certifications</h2>
       <div class="pub-grid">
         <article class="card">
           <h3>Key Accomplishments</h3>
@@ -339,7 +344,7 @@
     </section>
 
     <section id="contact" class="section shell reveal">
-      <h2>Contact</h2>
+      <h2><span class="h-icon icon-contact" aria-hidden="true"></span>Contact</h2>
       <div class="contact-wrap">
         <a class="card" href="mailto:grwaqo@knox.edu">
           <h3>Email</h3>

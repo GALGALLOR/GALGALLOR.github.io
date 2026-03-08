@@ -149,6 +149,26 @@ document.querySelectorAll(".project-preview").forEach((btn) => {
   });
 });
 
+// Click/hover expansion behavior for project cards
+document.querySelectorAll(".project").forEach((card) => {
+  card.addEventListener("click", (e) => {
+    const interactive = e.target.closest("a, button, video");
+    if (interactive) return;
+    card.classList.toggle("expanded");
+  });
+});
+
+// Gallery "show more" toggle
+document.querySelectorAll(".gallery-toggle").forEach((btn) => {
+  btn.addEventListener("click", () => {
+    const targetSel = btn.dataset.target;
+    const grid = targetSel ? document.querySelector(targetSel) : null;
+    if (!grid) return;
+    const showing = grid.classList.toggle("show-all");
+    btn.textContent = showing ? "Show less media" : "Show more media";
+  });
+});
+
 document.querySelectorAll(".media-thumb").forEach((el) => {
   el.addEventListener("click", () => {
     const type = el.dataset.mediaType;
@@ -162,6 +182,25 @@ document.querySelectorAll(".media-doc").forEach((btn) => {
     const src = btn.dataset.mediaSrc;
     if (src) window.open(src, "_blank", "noopener");
   });
+});
+
+// Auto style project links
+document.querySelectorAll(".project-links a").forEach((a) => {
+  const href = (a.getAttribute("href") || "").toLowerCase();
+  const label = (a.textContent || "").toLowerCase();
+  if (href.includes("github.com") || label.includes("github")) {
+    a.classList.add("link-github");
+  }
+  if (
+    label.includes("demo") ||
+    label.includes("play") ||
+    label.includes("devpost") ||
+    href.includes("youtube.com") ||
+    href.includes("drive.google.com") ||
+    href.includes("itch.io")
+  ) {
+    a.classList.add("link-demo");
+  }
 });
 
 if (closeModal && modal) {
