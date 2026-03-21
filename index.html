@@ -40,7 +40,7 @@
         <div class="hero-meta">
           <span>Galesburg, Illinois</span>
           <span>Knox College - CS and Data Science</span>
-          <span>GPA: 3.8 / 4.0</span>
+          <span>GPA: 3.83 / 4.0</span>
         </div>
         <article class="breaking-news card">
           <p class="news-kicker">Breaking News</p>
@@ -215,6 +215,32 @@
           <p class="stack">Software Engineering Practices | Back-End Development | Docker | MongoDB | Technical Documentation | REST APIs</p>
           <div class="project-links">
             <a href="https://github.com/GALGALLOR/Macro-Database-System" target="_blank" rel="noopener">GitHub</a>
+            <button class="ghost project-preview">Preview</button>
+          </div>
+        </article>
+
+        <article class="project card" data-tags="ai web" data-media-type="video" data-media-src="assets/media/face-verification-demo.mp4">
+          <h3>Face Verification with Transfer Learning</h3>
+          <p class="muted">ResNet18 + Streamlit | 2026</p>
+          <p>Built a binary face verification app that uses transfer learning with pretrained ResNet18 to classify whether an image matches a target person or not.</p>
+          <ul>
+            <li>Trained a PyTorch classifier with augmentation for pose, lighting, and expression changes</li>
+            <li>Used a two-stage workflow: feature extraction first, then fine-tuning for better accuracy</li>
+            <li>Evaluated performance with precision, recall, F1 score, and confusion matrix analysis</li>
+            <li>Deployed a Streamlit interface for uploaded-image and live camera inference</li>
+          </ul>
+          <p class="stack">Python | PyTorch | TorchVision | Streamlit | Scikit-learn | Computer Vision</p>
+          <div class="project-media-row">
+            <video class="media-thumb" data-media-type="video" data-media-src="assets/media/face-verification-demo.mp4" controls preload="metadata">
+              <source src="assets/media/face-verification-demo.mp4" type="video/mp4">
+            </video>
+            <video class="media-thumb" data-media-type="video" data-media-src="assets/media/face-verification-streamlit-test.mp4" controls preload="metadata">
+              <source src="assets/media/face-verification-streamlit-test.mp4" type="video/mp4">
+            </video>
+          </div>
+          <div class="project-links">
+            <a href="assets/media/face-verification-demo.mp4" target="_blank" rel="noopener">Demo Video 1</a>
+            <a href="assets/media/face-verification-streamlit-test.mp4" target="_blank" rel="noopener">Demo Video 2</a>
             <button class="ghost project-preview">Preview</button>
           </div>
         </article>
