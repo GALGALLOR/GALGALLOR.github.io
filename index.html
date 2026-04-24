@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Galgallo Waqo - Software Engineer and AI/ML Developer portfolio.">
-  <title>Galgallo Waqo | Software Engineer and AI/ML Developer</title>
+  <meta name="description" content="Galgallo Waqo - AI/ML and software engineer building computer vision, multimodal, and full-stack systems.">
+  <title>Galgallo Waqo | AI/ML + Software Engineer</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&family=Sora:wght@400;600;700&display=swap" rel="stylesheet">
@@ -19,61 +19,119 @@
       <a class="brand" href="#top">GW</a>
       <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false">Menu</button>
       <ul class="nav-links" id="navLinks">
-        <li><a href="#about">About</a></li>
-        <li><a href="#education">Education</a></li>
-        <li><a href="#experience">Experience</a></li>
         <li><a href="#projects">Projects</a></li>
+        <li><a href="#experience">Experience</a></li>
         <li><a href="#skills">Skills</a></li>
-        <li><a href="#publications">Accomplishments</a></li>
         <li><a href="#contact">Contact</a></li>
       </ul>
-      <a class="resume-btn" href="assets/media/Galgallo-Waqo-AI-SWE-Resume-2026.pdf" target="_blank" rel="noopener">Resume</a>
+      <div class="nav-actions">
+        <button class="theme-toggle" id="themeToggle" type="button" aria-pressed="false" aria-label="Switch to light mode" title="Switch to light mode"></button>
+        <a class="resume-btn" href="assets/media/Galgallo-Waqo-AI-SWE-Resume-2026.pdf" target="_blank" rel="noopener">Resume</a>
+      </div>
     </nav>
   </header>
 
   <main>
     <section class="hero shell">
       <div class="hero-copy reveal">
-        <p class="eyebrow">Software Engineer | AI/ML Developer</p>
+        <p class="eyebrow">AI/ML Engineer | Software Engineer | 3x Hackathon Winner</p>
+        <div class="hero-signal-row">
+          <div class="winner-mark" aria-label="Three-time hackathon winner">
+            <span class="winner-flame"></span>
+            <span class="winner-core">3x</span>
+          </div>
+          <div class="hero-signal-copy">
+            <strong>Hackathon Winner</strong>
+            <span>Computer vision, multimodal systems, and AI products built for the real world.</span>
+          </div>
+        </div>
         <h1>Galgallo Waqo</h1>
-        <p class="lead">I build full-stack systems and AI pipelines for security intelligence, automation, and data-driven decision support.</p>
+        <p class="lead">I build computer vision systems, agentic AI products, and full-stack software for security intelligence, sustainability, and real-world decision support.</p>
         <div class="hero-meta">
           <span>Galesburg, Illinois</span>
           <span>Knox College - CS and Data Science</span>
           <span>GPA: 3.83 / 4.0</span>
+          <span>Focused on AI/ML + SWE</span>
         </div>
-        <article class="breaking-news card">
-          <p class="news-kicker">Breaking News</p>
-          <h3>HackIllinois 2026: 1st Place - Best Use of Actian VectorAI DB</h3>
-          <p>Santosh Pant and I won as a two-person team in our first hackathon, competing among ~700 hackers.</p>
-          <p>We built Vigilant AI to transform long CCTV footage into searchable intelligence using computer vision, vector search, Gemini summaries, and scalable inference on Modal.</p>
-          <ul>
-            <li>Detects and tracks activity in CCTV footage</li>
-            <li>Builds semantic embeddings and stores them in Actian VectorAI DB</li>
-            <li>Uses Gemini for summaries and chatbot-style Q&amp;A</li>
-            <li>Runs scalable inference on Modal</li>
-          </ul>
-          <p class="news-links">
-            <a href="https://lnkd.in/dHVdJhxG" target="_blank" rel="noopener">Devpost</a>
-            <a href="https://github.com/GALGALLOR/vigilant-ai" target="_blank" rel="noopener">Repo</a>
-          </p>
-          <div class="news-media-grid">
-            <img class="media-thumb" data-media-type="image" data-media-src="assets/images/vigilant-ai-ui.png" src="assets/images/vigilant-ai-ui.png" alt="Vigilant AI interface screenshot">
-            <img class="media-thumb" data-media-type="image" data-media-src="assets/images/vigilant-ai-projector.png" src="assets/images/vigilant-ai-projector.png" alt="Vigilant AI shown on projector">
-            <img class="media-thumb" data-media-type="image" data-media-src="assets/images/hack-prize-ceremony.jpeg" src="assets/images/hack-prize-ceremony.jpeg" alt="Receiving HackIllinois prize">
-            <img class="media-thumb gallery-extra" data-media-type="image" data-media-src="assets/images/hack-win-prize.jpeg" src="assets/images/hack-win-prize.jpeg" alt="HackIllinois prize photo">
-            <img class="media-thumb gallery-extra" data-media-type="image" data-media-src="assets/images/hack-crowd-backview.jpeg" src="assets/images/hack-crowd-backview.jpeg" alt="HackIllinois crowd back view">
-            <video class="media-thumb gallery-extra" data-media-type="video" data-media-src="assets/images/hack-crowd-video.mp4" controls preload="metadata">
-              <source src="assets/images/hack-crowd-video.mp4" type="video/mp4">
-            </video>
-            <div class="media-placeholder gallery-extra">Incoming photo</div>
-            <div class="media-placeholder gallery-extra">Incoming photo</div>
+        <article class="breaking-news card achievement-slider" id="achievementSlider">
+          <div class="slider-head">
+            <div>
+              <p class="news-kicker">Latest Wins</p>
+              <p class="slider-subtitle">Auto-rotating highlights every 5 seconds.</p>
+            </div>
+            <div class="slider-controls" aria-label="Achievement slider controls">
+              <button type="button" class="slider-btn" data-dir="-1" aria-label="Previous achievement">Prev</button>
+              <button type="button" class="slider-btn" data-dir="1" aria-label="Next achievement">Next</button>
+            </div>
           </div>
-          <button class="gallery-toggle" type="button" data-target=".news-media-grid">Show more media</button>
+          <div class="slider-progress" aria-hidden="true">
+            <span id="sliderProgressBar"></span>
+          </div>
+          <div class="news-slide is-active">
+            <div class="news-slide-media">
+              <img src="assets/images/hackathons/michigan/thermalgen-display.png" alt="ThermalGen heat resilience model display" loading="lazy" decoding="async">
+            </div>
+            <div class="news-slide-copy">
+              <p class="news-tag">April 2026</p>
+              <h3>AI for Heat Resilience Hackathon</h3>
+              <p>Placed 2nd and earned a $2,000 award for a thermal-imagery workflow built from RGB drone data.</p>
+              <div class="news-pills">
+                <span>ThermalGen experiments</span>
+                <span>RGB-thermal preprocessing</span>
+                <span>Urban heat analysis</span>
+              </div>
+              <p class="news-links">
+                <a class="link-github" href="https://lnkd.in/gaDUyigM" target="_blank" rel="noopener">GitHub Repo</a>
+                <a href="assets/media/hackathons/michigan/galgallo-waqo-umichigan-certificate.pdf" target="_blank" rel="noopener">Certificate</a>
+              </p>
+            </div>
+          </div>
+          <div class="news-slide" hidden>
+            <div class="news-slide-media">
+              <img src="assets/images/hack-prize-ceremony.jpeg" alt="Receiving the HackIllinois prize" loading="lazy" decoding="async">
+            </div>
+            <div class="news-slide-copy">
+              <p class="news-tag">March 2026</p>
+              <h3>HackIllinois 2026</h3>
+              <p>Took 1st place for Best Use of Actian VectorAI DB with Vigilant AI, a searchable video intelligence system.</p>
+              <div class="news-pills">
+                <span>Video intelligence</span>
+                <span>Vector search</span>
+                <span>Multimodal AI</span>
+              </div>
+              <p class="news-links">
+                <a href="https://github.com/GALGALLOR/vigilant-ai" target="_blank" rel="noopener">GitHub</a>
+                <a href="https://lnkd.in/dHVdJhxG" target="_blank" rel="noopener">Devpost</a>
+              </p>
+            </div>
+          </div>
+          <div class="news-slide" hidden>
+            <div class="news-slide-media">
+              <img src="assets/images/hackathons/hackaugie/group-photo.png" alt="HackAugie team group photo" loading="lazy" decoding="async">
+            </div>
+            <div class="news-slide-copy">
+              <p class="news-tag">April 2026</p>
+              <h3>HackAugie</h3>
+              <p>Won Best Data Insight with Aeris, a live environmental vision app that turns waste detection into actionable advice.</p>
+              <div class="news-pills">
+                <span>YOLO fine-tuning</span>
+                <span>Live Streamlit UX</span>
+                <span>Sustainability AI</span>
+              </div>
+              <p class="news-links">
+                <a href="https://github.com/LambSystems/aeris" target="_blank" rel="noopener">GitHub</a>
+                <a href="https://youtu.be/41eoB-4JUbs?si=fOqxOw1EUUuv4k-p" target="_blank" rel="noopener">YouTube Demo</a>
+              </p>
+            </div>
+          </div>
+          <div class="slider-dots" aria-label="Achievement slider pagination">
+            <button type="button" class="slider-dot is-active" aria-label="Show achievement 1"></button>
+            <button type="button" class="slider-dot" aria-label="Show achievement 2"></button>
+            <button type="button" class="slider-dot" aria-label="Show achievement 3"></button>
+          </div>
         </article>
         <div class="hero-cta">
           <a class="btn btn-primary" href="#projects">See Projects</a>
-          <a class="btn btn-ghost" href="#contact">Contact Me</a>
           <a class="btn btn-ghost" href="assets/media/Galgallo-Waqo-AI-SWE-Resume-2026.pdf" target="_blank" rel="noopener">Download Resume</a>
         </div>
       </div>
@@ -84,10 +142,236 @@
       </div>
     </section>
 
+    <section id="projects" class="section shell reveal">
+      <h2><span class="h-icon icon-projects" aria-hidden="true"></span>Selected Projects</h2>
+      <p class="section-note">Recent AI/ML and software work is featured first in reverse-chronological order. Older work is tucked into the archive below.</p>
+      <div class="chips" id="projectFilters">
+        <button class="chip active" data-filter="all">All</button>
+        <button class="chip" data-filter="ai">AI/ML</button>
+        <button class="chip" data-filter="web">Web</button>
+        <button class="chip" data-filter="game">Game</button>
+        <button class="chip" data-filter="research">Research</button>
+      </div>
+
+      <div class="grid projects-grid" id="projectGrid">
+        <article class="project card" data-tags="ai web">
+          <div class="project-head">
+            <div>
+              <h3>Aeris</h3>
+              <p class="muted">Winner, Best Data Insight at HackAugie | Late Apr 2026</p>
+            </div>
+            <span class="project-badge">Real-Time CV</span>
+          </div>
+          <p>Built a live environmental vision product that detects waste, adds environmental context, and recommends immediate action.</p>
+          <ul>
+            <li>Recorded, annotated, and cleaned training data for the waste-detection workflow</li>
+            <li>Fine-tuned the custom YOLO model for can, paper, and bottle detection while improving inference speed</li>
+            <li>Connected live detections to Streamlit UX and the environmental recommendation pipeline</li>
+          </ul>
+          <p class="stack">Ultralytics YOLO | Streamlit | FastAPI | OpenCV | Computer Vision | Sustainability AI</p>
+          <div class="project-media-row project-media-rich">
+            <img class="media-thumb" data-media-type="image" data-media-src="assets/images/hackathons/hackaugie/aeris-profile.png" src="assets/images/hackathons/hackaugie/aeris-profile.png" alt="Aeris project cover image" loading="lazy" decoding="async">
+            <img class="media-thumb" data-media-type="image" data-media-src="assets/images/hackathons/hackaugie/aeris-in-action.png" src="assets/images/hackathons/hackaugie/aeris-in-action.png" alt="Aeris in action during demo" loading="lazy" decoding="async">
+            <img class="media-thumb" data-media-type="image" data-media-src="assets/images/hackathons/hackaugie/group-photo.png" src="assets/images/hackathons/hackaugie/group-photo.png" alt="Aeris team group photo" loading="lazy" decoding="async">
+          </div>
+          <details class="project-gallery">
+            <summary>View extra gallery (1 new image + demo)</summary>
+            <div class="gallery-strip">
+              <img class="media-thumb" data-media-type="image" data-media-src="assets/images/hackathons/hackaugie/group-photo-alt.JPG" src="assets/images/hackathons/hackaugie/group-photo-alt.JPG" alt="Aeris alternate group photo" loading="lazy" decoding="async">
+              <iframe class="gallery-video" src="https://www.youtube.com/embed/41eoB-4JUbs?start=45&end=180&rel=0" title="Aeris YouTube demo" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+          </details>
+          <div class="project-links">
+            <a href="https://github.com/LambSystems/aeris" target="_blank" rel="noopener">GitHub</a>
+            <a href="https://youtu.be/41eoB-4JUbs?si=fOqxOw1EUUuv4k-p" target="_blank" rel="noopener">YouTube Demo</a>
+          </div>
+        </article>
+
+        <article class="project card" data-tags="ai web research">
+          <div class="project-head">
+            <div>
+              <h3>UrbanLens</h3>
+              <p class="muted">Google Build with AI Hackathon | Mid Apr 2026</p>
+            </div>
+            <span class="project-badge">Agentic Sustainability</span>
+          </div>
+          <p>Created an agentic sustainability platform that turns map imagery and environmental data into thermal evidence, hotspot ranking, and planning recommendations.</p>
+          <ul>
+            <li>Fine-tuned the pre-existing ThermalGen model for urban scenes with U-Net architecture changes</li>
+            <li>Built the RGB-to-thermal preprocessing pipeline and standardized it for Google Maps satellite imagery</li>
+            <li>Implemented FastAPI inference hooks so ThermalGen could act as a callable tool inside the agent pipeline</li>
+          </ul>
+          <p class="stack">PyTorch | FastAPI | Next.js | Agentic AI | Remote Sensing | Sustainability Tech</p>
+          <div class="project-media-row project-media-rich">
+            <img class="media-thumb" data-media-type="image" data-media-src="assets/images/hackathons/washu/urbanlens-profile.png" src="assets/images/hackathons/washu/urbanlens-profile.png" alt="UrbanLens profile graphic" loading="lazy" decoding="async">
+            <img class="media-thumb" data-media-type="image" data-media-src="assets/images/hackathons/washu/urbanlens-after-thermal.jpg" src="assets/images/hackathons/washu/urbanlens-after-thermal.jpg" alt="UrbanLens thermal result" loading="lazy" decoding="async">
+            <img class="media-thumb" data-media-type="image" data-media-src="assets/images/hackathons/washu/urbanlens-agent-feedback.jpg" src="assets/images/hackathons/washu/urbanlens-agent-feedback.jpg" alt="UrbanLens agent feedback view" loading="lazy" decoding="async">
+          </div>
+          <details class="project-gallery">
+            <summary>View extra gallery (2 new images + demo)</summary>
+            <div class="gallery-strip">
+              <img class="media-thumb" data-media-type="image" data-media-src="assets/images/hackathons/washu/urbanlens-before-thermal.jpg" src="assets/images/hackathons/washu/urbanlens-before-thermal.jpg" alt="UrbanLens before thermal processing" loading="lazy" decoding="async">
+              <img class="media-thumb" data-media-type="image" data-media-src="assets/images/hackathons/washu/urbanlens-agent-prompt.jpg" src="assets/images/hackathons/washu/urbanlens-agent-prompt.jpg" alt="UrbanLens agent prompt configuration" loading="lazy" decoding="async">
+              <iframe class="gallery-video" src="https://www.youtube.com/embed/78SCFwdAIuk?start=46&end=185&rel=0" title="UrbanLens YouTube demo" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+          </details>
+          <div class="project-links">
+            <a href="https://github.com/LambSystems/urbanlens" target="_blank" rel="noopener">GitHub</a>
+            <a href="https://youtu.be/78SCFwdAIuk?si=vV08VoArmaumMSh0" target="_blank" rel="noopener">YouTube Demo</a>
+          </div>
+        </article>
+
+        <article class="project card" data-tags="ai research">
+          <div class="project-head">
+            <div>
+              <h3>ThermalGen for Urban Heat Resilience</h3>
+              <p class="muted">2nd Place, AI for Heat Resilience Hackathon | Early Apr 2026</p>
+            </div>
+            <span class="project-badge">Experimental ML</span>
+          </div>
+          <p>Built a thermal-imagery prediction workflow that estimates urban heat patterns from RGB drone captures, making heat-risk analysis cheaper and easier to scale.</p>
+          <ul>
+            <li>Experimented across ThermalGen baselines and hybrid directions to improve urban-scene performance</li>
+            <li>Aligned RGB drone frames with thermal imagery for cleaner supervised training</li>
+            <li>Tested encoder-decoder changes to better capture object-level heat structure</li>
+          </ul>
+          <p class="stack">PyTorch | Computer Vision | Thermal Imaging | U-Net | Remote Sensing | Experimental ML</p>
+          <div class="project-media-row">
+            <img class="media-thumb" data-media-type="image" data-media-src="assets/images/hackathons/michigan/thermalgen-display.png" src="assets/images/hackathons/michigan/thermalgen-display.png" alt="ThermalGen model display" loading="lazy" decoding="async">
+            <img class="media-thumb" data-media-type="image" data-media-src="assets/images/hackathons/michigan/nima-presenting.jpg" src="assets/images/hackathons/michigan/nima-presenting.jpg" alt="Heat resilience project presentation" loading="lazy" decoding="async">
+            <img class="media-thumb" data-media-type="image" data-media-src="assets/images/hackathons/michigan/group-photo.jpg" src="assets/images/hackathons/michigan/group-photo.jpg" alt="Heat resilience team group photo" loading="lazy" decoding="async">
+          </div>
+          <details class="project-gallery">
+            <summary>View extra gallery (1 new image)</summary>
+            <div class="gallery-strip">
+              <img class="media-thumb" data-media-type="image" data-media-src="assets/images/hackathons/michigan/opening-showcase.jpg" src="assets/images/hackathons/michigan/opening-showcase.jpg" alt="AI for Heat Resilience showcase opening" loading="lazy" decoding="async">
+            </div>
+          </details>
+          <div class="project-links">
+            <a class="link-github" href="https://lnkd.in/gaDUyigM" target="_blank" rel="noopener">GitHub Repo</a>
+            <a href="assets/media/hackathons/michigan/galgallo-waqo-umichigan-certificate.pdf" target="_blank" rel="noopener">Certificate</a>
+          </div>
+        </article>
+
+        <article class="project card" data-tags="ai web research" data-media-type="image" data-media-src="assets/images/vigilant-ai-ui.png">
+          <div class="project-head">
+            <div>
+              <h3>Vigilant AI</h3>
+              <p class="muted">HackIllinois 2026 Winner | Mar 2026</p>
+            </div>
+            <span class="project-badge">Video Intelligence</span>
+          </div>
+          <p>Built an AI-powered system that converts raw surveillance video into searchable intelligence using computer vision, vector search, and multimodal reasoning.</p>
+          <ul>
+            <li>Used YOLO11-L, CLIP embeddings, and multimodal captioning for searchable video understanding</li>
+            <li>Combined vector retrieval with Gemini-powered summaries and chat-style querying</li>
+            <li>Designed the system for long-footage analysis and cross-video behavioral memory</li>
+          </ul>
+          <p class="stack">Actian VectorAI DB | Computer Vision | Multimodal Prompting | PyTorch | Object Detection</p>
+          <div class="project-media-row project-media-rich">
+            <img class="media-thumb" data-media-type="image" data-media-src="assets/images/vigilant-ai-ui.png" src="assets/images/vigilant-ai-ui.png" alt="Vigilant AI UI" loading="lazy" decoding="async">
+            <img class="media-thumb" data-media-type="image" data-media-src="assets/images/vigilant-ai-projector.png" src="assets/images/vigilant-ai-projector.png" alt="Vigilant AI presentation" loading="lazy" decoding="async">
+            <img class="media-thumb" data-media-type="image" data-media-src="assets/images/hack-prize-ceremony.jpeg" src="assets/images/hack-prize-ceremony.jpeg" alt="Vigilant AI award ceremony" loading="lazy" decoding="async">
+          </div>
+          <details class="project-gallery">
+            <summary>View extra gallery (2 new images + demo)</summary>
+            <div class="gallery-strip">
+              <img class="media-thumb" data-media-type="image" data-media-src="assets/images/hack-win-prize.jpeg" src="assets/images/hack-win-prize.jpeg" alt="Vigilant AI winners holding prize" loading="lazy" decoding="async">
+              <img class="media-thumb" data-media-type="image" data-media-src="assets/images/hack-crowd-backview.jpeg" src="assets/images/hack-crowd-backview.jpeg" alt="HackIllinois crowd back view" loading="lazy" decoding="async">
+              <iframe class="gallery-video" src="https://www.youtube.com/embed/mcRwnxsVs7g?start=39&end=157&rel=0" title="Vigilant AI YouTube demo" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+          </details>
+          <div class="project-links">
+            <a href="https://github.com/GALGALLOR/vigilant-ai" target="_blank" rel="noopener">GitHub</a>
+            <a href="https://lnkd.in/dHVdJhxG" target="_blank" rel="noopener">Devpost</a>
+            <a href="https://youtu.be/mcRwnxsVs7g?si=ZiFBgbKSVcta_Xzw" target="_blank" rel="noopener">YouTube Demo</a>
+          </div>
+        </article>
+      </div>
+
+      <details class="project-archive card">
+        <summary>Earlier Projects and Research</summary>
+        <p class="archive-note">Older work is still here if you want the fuller timeline.</p>
+        <div class="grid projects-grid project-archive-grid">
+          <article class="project card" data-tags="web ai" data-media-type="image" data-media-src="assets/images/macro-logo.png">
+          <h3>Macro Image Data Management Platform</h3>
+          <p class="muted">Full-Stack and DevOps Team Project | Mar 2025 - Jun 2025</p>
+          <p>Team-built platform for scientific image data management across private network directories, with secure access, metadata syncing, deep filtering, and containerized deployment.</p>
+          <p>I led backend and infrastructure efforts: secured Flask API with role-based auth, refactored into MVC, designed JSON metadata sync workflows, handled Docker Compose multi-container issues, and wrote deployment/testing documentation.</p>
+          <p class="stack">Software Engineering Practices | Back-End Development | Docker | MongoDB | Technical Documentation | REST APIs</p>
+          <div class="project-links">
+            <a href="https://github.com/GALGALLOR/Macro-Database-System" target="_blank" rel="noopener">GitHub</a>
+            <button class="ghost project-preview">Preview</button>
+          </div>
+          </article>
+
+          <article class="project card" data-tags="ai web" data-media-type="video" data-media-src="assets/media/face-verification-demo.mp4">
+          <h3>Face Verification with Transfer Learning</h3>
+          <p class="muted">ResNet18 + Streamlit | 2026</p>
+          <p>Built a binary face verification app that uses transfer learning with pretrained ResNet18 to classify whether an image matches a target person or not.</p>
+          <ul>
+            <li>Trained a PyTorch classifier with augmentation for pose, lighting, and expression changes</li>
+            <li>Used a two-stage workflow: feature extraction first, then fine-tuning for better accuracy</li>
+            <li>Evaluated performance with precision, recall, F1 score, and confusion matrix analysis</li>
+            <li>Deployed a Streamlit interface for uploaded-image and live camera inference</li>
+          </ul>
+          <p class="stack">Python | PyTorch | TorchVision | Streamlit | Scikit-learn | Computer Vision</p>
+          <div class="project-media-row">
+            <button class="media-doc" data-media-type="video" data-media-src="assets/media/face-verification-demo.mp4">Open Demo Video 1</button>
+            <button class="media-doc" data-media-type="video" data-media-src="assets/media/face-verification-streamlit-test.mp4">Open Demo Video 2</button>
+          </div>
+          <div class="project-links">
+            <a href="https://github.com/GALGALLOR/Face-Verification-using-Transfer-Learning" target="_blank" rel="noopener">GitHub</a>
+            <a href="assets/media/face-verification-demo.mp4" target="_blank" rel="noopener">Demo Video 1</a>
+            <a href="assets/media/face-verification-streamlit-test.mp4" target="_blank" rel="noopener">Demo Video 2</a>
+            <button class="ghost project-preview">Preview</button>
+          </div>
+          </article>
+
+          <article class="project card" data-tags="game" data-media-type="image" data-media-src="assets/images/jetpack-johnny-logo.png">
+          <h3>Jetpack Johnny Game</h3>
+          <p class="muted">Jan 2025 - Mar 2025</p>
+          <p>Co-developed a 2D side-scrolling action-shooter in Godot with teammates Nairran Zargar, Eita Ueda, and Santosh Panti.</p>
+          <ul>
+            <li>Implemented player mechanics and core backend game systems</li>
+            <li>Designed enemy movement, boss behaviors, and randomized spawns</li>
+            <li>Balanced challenge and humor with custom sound design</li>
+          </ul>
+          <p class="stack">GDScript | Godot | Team Leadership | Project Management</p>
+          <div class="project-media-row">
+            <img class="media-thumb" data-media-type="image" data-media-src="assets/images/jetpack-johnny-logo.png" src="assets/images/jetpack-johnny-logo.png" alt="Jetpack Johnny logo" loading="lazy" decoding="async">
+          </div>
+          <div class="project-links">
+            <a href="https://galgallor.itch.io/jetpack-jhonny" target="_blank" rel="noopener">Play Game</a>
+            <a href="https://github.com/GALGALLOR/Jetpack-Jhonny-Game" target="_blank" rel="noopener">Github</a>
+            <a href="https://drive.google.com/file/d/1VbLfG_yGkpuIM0xElYRSohOSzBcYXUj0/view" target="_blank" rel="noopener">Demo Video</a>
+            <button class="ghost project-preview">Preview</button>
+          </div>
+          </article>
+
+          <article class="project card" data-tags="research" data-media-type="pdf" data-media-src="assets/media/supercomputer-network-topologies-research.pdf">
+          <h3>Comparative Analysis of Supercomputer Network Topologies</h3>
+          <p class="muted">Sep 2024 - Dec 2024</p>
+          <p>Conducted network theory research with Erdos-Renyi models to study how random shortcuts and connectivity influence network diameter and traversal efficiency.</p>
+          <p>Implemented custom optimization strategies linking high-degree and low-degree vertices and found Erdos-Renyi ring structures offer strong scalability for distributed systems.</p>
+          <p class="stack">Network Theory | Algorithm Design | Debugging | Distributed Systems</p>
+          <div class="project-media-row">
+            <button class="media-doc" data-media-type="pdf" data-media-src="assets/media/supercomputer-network-topologies-research.pdf">Open Research PDF</button>
+            <img class="media-thumb" data-media-type="image" data-media-src="assets/images/me on research horizon.jpg" src="assets/images/me on research horizon.jpg" alt="Galgallo presenting research" loading="lazy" decoding="async">
+          </div>
+          <div class="project-links">
+            <a href="assets/media/supercomputer-network-topologies-research.pdf" target="_blank" rel="noopener">Research Poster (PDF)</a>
+            <button class="ghost project-preview">Open PDF</button>
+          </div>
+          </article>
+        </div>
+      </details>
+    </section>
+
     <section id="about" class="section shell reveal">
       <h2><span class="h-icon icon-about" aria-hidden="true"></span>About</h2>
-      <p>Software Engineer and AI/ML developer with experience building intelligent systems across backend services, computer vision workflows, and production-style applications. I work across Python, Java Spring Boot, React, and cloud GPU infrastructure to create tools that are practical and scalable.</p>
-      <p>I am especially interested in AI for real-world security, analytics, and workflow automation, including multimodal search and operational monitoring systems.</p>
+      <p>AI/ML and software engineer with experience building computer vision systems, agent workflows, and production-style web applications. I work across Python, PyTorch, FastAPI, React, and cloud tooling to turn models into usable products.</p>
+      <p>Lately I have been leaning further into AI/ML + SWE, especially multimodal systems, environmental intelligence, model fine-tuning, and full-stack tools that make machine learning useful in the real world.</p>
     </section>
 
     <section id="education" class="section shell reveal">
@@ -97,7 +381,7 @@
           <h3>Knox College, Galesburg, IL</h3>
           <p class="muted">Bachelor of Science, Computer Science and Data Science | Expected June 2027</p>
           <p class="muted">GPA: 3.83 / 4.0</p>
-          <p>Coursework: Software Engineering, Molecular Programming, New Supercomputer Net Topologies, Artificial Intelligence and Machine Learning.</p>
+          <p>Coursework emphasis: Artificial Intelligence, Machine Learning, Data Structures and Algorithms, Mathematical Foundations for Computing, Probability and Statistical Modeling, Software Engineering, and systems-oriented project work.</p>
         </article>
       </div>
     </section>
@@ -129,7 +413,7 @@
           <button class="acc-head" aria-expanded="false">
             <span>
               <strong>Web Developer Intern</strong> - Jupiter Machine Tool Inc
-              <small>Galesburg, IL | Apr 2025 - Present</small>
+              <small>Galesburg, IL | Apr 2025 - Nov 21, 2025</small>
             </span>
             <span class="acc-icon">+</span>
           </button>
@@ -144,7 +428,7 @@
           </div>
         </article>
 
-                <article class="acc-item card">
+        <article class="acc-item card">
           <button class="acc-head" aria-expanded="false">
             <span>
               <strong>Social Media Manager</strong> - Knox College
@@ -162,170 +446,44 @@
             </ul>
           </div>
         </article>
-
-
-      </div>
-    </section>
-
-    <section id="projects" class="section shell reveal">
-      <h2><span class="h-icon icon-projects" aria-hidden="true"></span>Research and Projects</h2>
-      <div class="chips" id="projectFilters">
-        <button class="chip active" data-filter="all">All</button>
-        <button class="chip" data-filter="ai">AI/ML</button>
-        <button class="chip" data-filter="web">Web</button>
-        <button class="chip" data-filter="game">Game</button>
-        <button class="chip" data-filter="research">Research</button>
-      </div>
-
-      <div class="grid projects-grid" id="projectGrid">
-        <article class="project card" data-tags="ai web research" data-media-type="image" data-media-src="assets/images/vigilant-ai-ui.png">
-          <h3>Vigilant AI</h3>
-          <p class="muted">AI-Powered Video Surveillance Intelligence | Mar 2026</p>
-          <p>Built an AI-powered system that converts raw surveillance video into structured, searchable intelligence using modern computer vision and multimodal AI models.</p>
-          <ul>
-            <li>Object detection and activity analysis using YOLO11-L</li>
-            <li>Semantic video search using CLIP embeddings + vector database</li>
-            <li>Vision-language captioning with Qwen2.5-VL and Gemini</li>
-            <li>Hybrid retrieval using vector similarity + keyword search</li>
-            <li>Streaming chat interface for natural language video queries</li>
-            <li>Cross-video memory for long-term behavioral intelligence</li>
-          </ul>
-          <p class="stack">Actian VectorAI DB | Computer Vision | Multimodal Prompting | Machine Learning | PyTorch | Object Detection</p>
-          <div class="project-media-row">
-            <img class="media-thumb" data-media-type="image" data-media-src="assets/images/vigilant-ai-ui.png" src="assets/images/vigilant-ai-ui.png" alt="Vigilant AI UI">
-            <img class="media-thumb" data-media-type="image" data-media-src="assets/images/vigilant-ai-projector.png" src="assets/images/vigilant-ai-projector.png" alt="Vigilant AI presentation">
-            <img class="media-thumb" data-media-type="image" data-media-src="assets/images/hack-prize-ceremony.jpeg" src="assets/images/hack-prize-ceremony.jpeg" alt="Award ceremony">
-            <img class="media-thumb" data-media-type="image" data-media-src="assets/images/hack-win-prize.jpeg" src="assets/images/hack-win-prize.jpeg" alt="Award photo">
-            <div class="media-placeholder">Incoming photo</div>
-            <div class="media-placeholder">Incoming photo</div>
-          </div>
-          <div class="project-links">
-            <a href="https://github.com/GALGALLOR/vigilant-ai" target="_blank" rel="noopener">GitHub</a>
-            <a href="https://lnkd.in/dHVdJhxG" target="_blank" rel="noopener">Devpost</a>
-            <a href="https://www.youtube.com/watch?v=5qwpq6IBltU" target="_blank" rel="noopener">Demo Video</a>
-            <button class="ghost project-preview">Preview</button>
-          </div>
-        </article>
-
-        <article class="project card" data-tags="web ai" data-media-type="image" data-media-src="assets/images/macro-logo.png">
-          <h3>Macro Image Data Management Platform</h3>
-          <p class="muted">Full-Stack and DevOps Team Project | Mar 2025 - Jun 2025</p>
-          <p>Team-built platform for scientific image data management across private network directories, with secure access, metadata syncing, deep filtering, and containerized deployment.</p>
-          <p>I led backend and infrastructure efforts: secured Flask API with role-based auth, refactored into MVC, designed JSON metadata sync workflows, handled Docker Compose multi-container issues, and wrote deployment/testing documentation.</p>
-          <p class="stack">Software Engineering Practices | Back-End Development | Docker | MongoDB | Technical Documentation | REST APIs</p>
-          <div class="project-links">
-            <a href="https://github.com/GALGALLOR/Macro-Database-System" target="_blank" rel="noopener">GitHub</a>
-            <button class="ghost project-preview">Preview</button>
-          </div>
-        </article>
-
-        <article class="project card" data-tags="ai web" data-media-type="video" data-media-src="assets/media/face-verification-demo.mp4">
-          <h3>Face Verification with Transfer Learning</h3>
-          <p class="muted">ResNet18 + Streamlit | 2026</p>
-          <p>Built a binary face verification app that uses transfer learning with pretrained ResNet18 to classify whether an image matches a target person or not.</p>
-          <ul>
-            <li>Trained a PyTorch classifier with augmentation for pose, lighting, and expression changes</li>
-            <li>Used a two-stage workflow: feature extraction first, then fine-tuning for better accuracy</li>
-            <li>Evaluated performance with precision, recall, F1 score, and confusion matrix analysis</li>
-            <li>Deployed a Streamlit interface for uploaded-image and live camera inference</li>
-          </ul>
-          <p class="stack">Python | PyTorch | TorchVision | Streamlit | Scikit-learn | Computer Vision</p>
-          <div class="project-media-row">
-            <video class="media-thumb" data-media-type="video" data-media-src="assets/media/face-verification-demo.mp4" controls preload="metadata">
-              <source src="assets/media/face-verification-demo.mp4" type="video/mp4">
-            </video>
-            <video class="media-thumb" data-media-type="video" data-media-src="assets/media/face-verification-streamlit-test.mp4" controls preload="metadata">
-              <source src="assets/media/face-verification-streamlit-test.mp4" type="video/mp4">
-            </video>
-          </div>
-          <div class="project-links">
-            <a href="https://github.com/GALGALLOR/Face-Verification-using-Transfer-Learning" target="_blank" rel="noopener">GitHub</a>
-            <a href="assets/media/face-verification-demo.mp4" target="_blank" rel="noopener">Demo Video 1</a>
-            <a href="assets/media/face-verification-streamlit-test.mp4" target="_blank" rel="noopener">Demo Video 2</a>
-            <button class="ghost project-preview">Preview</button>
-          </div>
-        </article>
-
-        <article class="project card" data-tags="game" data-media-type="image" data-media-src="assets/images/jetpack-johnny-logo.png">
-          <h3>Jetpack Johnny Game</h3>
-          <p class="muted">Jan 2025 - Mar 2025</p>
-          <p>Co-developed a 2D side-scrolling action-shooter in Godot with teammates Nairran Zargar, Eita Ueda, and Santosh Panti.</p>
-          <ul>
-            <li>Implemented player mechanics and core backend game systems</li>
-            <li>Designed enemy movement, boss behaviors, and randomized spawns</li>
-            <li>Balanced challenge and humor with custom sound design</li>
-          </ul>
-          <p class="stack">GDScript | Godot | Team Leadership | Project Management</p>
-          <div class="project-media-row">
-            <img class="media-thumb" data-media-type="image" data-media-src="assets/images/jetpack-johnny-logo.png" src="assets/images/jetpack-johnny-logo.png" alt="Jetpack Johnny logo">
-            <!--<div class="media-placeholder">Incoming photo</div>
-            <div class="media-placeholder">Incoming photo</div> -->
-          </div>
-          <div class="project-links">
-            <a href="https://galgallor.itch.io/jetpack-jhonny" target="_blank" rel="noopener">Play Game</a>
-            <a href="https://github.com/GALGALLOR/Jetpack-Jhonny-Game" target="_blank" rel="noopener">Github</a>
-            <a href="https://drive.google.com/file/d/1VbLfG_yGkpuIM0xElYRSohOSzBcYXUj0/view" target="_blank" rel="noopener">Demo Video</a>
-            <button class="ghost project-preview">Preview</button>
-          </div>
-        </article>
-
-        <article class="project card" data-tags="research" data-media-type="pdf" data-media-src="assets/media/supercomputer-network-topologies-research.pdf">
-          <h3>Comparative Analysis of Supercomputer Network Topologies</h3>
-          <p class="muted">Sep 2024 - Dec 2024</p>
-          <p>Conducted network theory research with Erdos-Renyi models to study how random shortcuts and connectivity influence network diameter and traversal efficiency.</p>
-          <p>Implemented custom optimization strategies linking high-degree and low-degree vertices and found Erdos-Renyi ring structures offer strong scalability for distributed systems.</p>
-          <p class="stack">Network Theory | Algorithm Design | Debugging | Distributed Systems</p>
-          <div class="project-media-row">
-            <button class="media-doc" data-media-type="pdf" data-media-src="assets/media/supercomputer-network-topologies-research.pdf">Open Research PDF</button>
-            <img class="media-thumb" data-media-type="image" data-media-src="assets/images/me on research horizon.jpg" src="assets/images/me on research horizon.jpg" alt="Galgallo presenting research">
-            <div class="media-placeholder">Incoming photo</div>
-          </div>
-          <div class="project-links">
-            <a href="assets/media/supercomputer-network-topologies-research.pdf" target="_blank" rel="noopener">Research Poster (PDF)</a>
-            <button class="ghost project-preview">Open PDF</button>
-          </div>
-        </article>
       </div>
     </section>
 
     <section id="skills" class="section shell reveal">
       <h2><span class="h-icon icon-skills" aria-hidden="true"></span>Skills</h2>
-      <p class="section-note">Technical stack across AI, software engineering, and deployment.</p>
+      <p class="section-note">Technical stack across AI/ML, software engineering, and deployment.</p>
       <div class="skills-grid">
         <article class="card">
           <h3>Languages</h3>
-          <p>Python, Java, JavaScript, TypeScript, C++, C#, C, Kotlin, GDScript, Spring Boot, Actian VectorAI</p>
+          <p>Python, TypeScript, Java, JavaScript, C++, C#, C, Kotlin, GDScript, HTML/CSS</p>
         </article>
         <article class="card">
-          <h3>Frameworks and Development</h3>
-          <p>Flask, FastAPI, React, Spring Boot, REST APIs, Microservices, Role-Based Access Control, OAuth</p>
+          <h3>Frameworks and Product Engineering</h3>
+          <p>FastAPI, Flask, React, Next.js, Streamlit, Spring Boot, Tailwind CSS, REST APIs, Microservices</p>
         </article>
         <article class="card">
           <h3>AI, ML, and Data</h3>
-          <p>Computer Vision, Multimodal AI, Vector Search, Object Detection, Semantic Retrieval, ML Pipelines, PyTorch</p>
+          <p>PyTorch, Computer Vision, Model Fine-Tuning, YOLO, U-Net, Transfer Learning, Multimodal AI, Vector Search, Dataset Curation, ML Pipelines</p>
         </article>
         <article class="card">
           <h3>Infrastructure and Tools</h3>
-          <p>Docker, Docker Compose, MongoDB, Modal (serverless GPUs), Git/GitHub, Technical Documentation, SEO Workflows</p>
+          <p>Docker, Docker Compose, MongoDB, Modal GPUs, Git/GitHub, OpenCV, Scikit-learn, Google Maps API, Technical Documentation</p>
         </article>
       </div>
     </section>
 
     <section id="publications" class="section shell reveal">
-      <h2><span class="h-icon icon-awards" aria-hidden="true"></span>Accomplishments and Certifications</h2>
+      <h2><span class="h-icon icon-awards" aria-hidden="true"></span>Awards, Honors, and Certifications</h2>
       <div class="pub-grid">
         <article class="card">
-          <h3>Key Accomplishments</h3>
+          <h3>Hackathons and Highlights</h3>
           <ul>
-            <li>HackIllinois 2026 - 1st Place, Best Use of Actian VectorAI DB (Vigilant AI).</li>
+            <li>AI for Heat Resilience Hackathon - 2nd Place and $2,000 award (Spring 2026).</li>
+            <li>HackAugie - Winner, Best Data Insight for Aeris (Spring 2026).</li>
+            <li>HackIllinois 2026 - 1st Place, Best Use of Actian VectorAI DB for Vigilant AI.</li>
+            <li>Built UrbanLens for the Google Build with AI Hackathon, focused on sustainability, thermal evidence, and agentic urban analysis.</li>
             <li>NCAA Division III National Semifinalist - Knox College Men's Soccer Team (2024).</li>
-            <li>Historian/Public Relations - African Student Associations.</li>
-            <li>Dean's List Recognition - Knox College.</li>
-            <li>Certificate of Good Conduct - Light Academy (2021).</li>
           </ul>
-          <p class="merit-link">
-            Full accomplishments list: <a href="https://meritpages.com/Galgallo" target="_blank" rel="noopener">Merit Page</a>
-          </p>
         </article>
 
         <article class="card">
@@ -361,10 +519,10 @@
           </p>
           <div class="badge-gallery">
             <a href="https://meritpages.com/Galgallo" target="_blank" rel="noopener">
-              <img src="assets/images/awards-honors-badge.png" alt="Awards and Honors badge">
+              <img src="assets/images/awards-honors-badge.png" alt="Awards and Honors badge" loading="lazy" decoding="async">
             </a>
             <a href="https://meritpages.com/Galgallo" target="_blank" rel="noopener">
-              <img src="assets/images/deans-list-badge.png" alt="Dean's List badge">
+              <img src="assets/images/deans-list-badge.png" alt="Dean's List badge" loading="lazy" decoding="async">
             </a>
           </div>
         </article>
